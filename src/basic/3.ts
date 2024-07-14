@@ -1,9 +1,9 @@
-// Створіть змінну, яка може містити або рядок, 
-// або число (union type)? 
-//Також, оголосіть змінну, яка може містити лише 
-//одне з двох можливих рядкових значень:
-//  'enable' або 'disable' (literal type).
+let unionType: string | number;
+unionType = 'hello';
+unionType = 123;
 
-let mixed: (number | string);
+type Status = 'enable' | 'disable';
+let status: Status;
+status = 'enable';
+status = 'disable';
 
-let mix: 'enable'| 'disable' ;
